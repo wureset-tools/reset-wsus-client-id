@@ -22,7 +22,7 @@ This script Fix Duplicate WSUS Client IDs.
 <a name="started"></a>
 ## :traffic_light: Getting Started
 
-For silent mode run the cmd console as Administrator and type:
+For silent mode open the command prompt as administrator and type:
 
 ```
 resetSUSClientID /s
@@ -48,7 +48,7 @@ If you want to help me to continue this project, you might donate via PayPal.
 			<td>
 				<ul>
 					<li>
-						Auto lauch with elevation
+						Auto launch with elevation
 					</li>
 					<li>
 						Silent mode
