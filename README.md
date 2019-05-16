@@ -7,10 +7,10 @@
 		<img src="https://img.shields.io/badge/stability-stable-green.svg" alt="Status">
 	</a>
 	<a href="#changelog">
-		<img src="https://img.shields.io/badge/release-v1.0.0-blue.svg" alt="Version">
+		<img src="https://img.shields.io/badge/release-v1.0.1-blue.svg" alt="Version">
 	</a>
 	<a href="#changelog">
-		<img src="https://img.shields.io/badge/update-april-yellowgreen.svg" alt="Update">
+		<img src="https://img.shields.io/badge/update-may-yellowgreen.svg" alt="Update">
 	</a>
 	<a href="#license">
 		<img src="https://img.shields.io/badge/license-MIT%20License-green.svg" alt="License">
@@ -22,15 +22,11 @@ This script Fix Duplicate WSUS Client IDs.
 <a name="started"></a>
 ## :traffic_light: Getting Started
 
-<a name="requirements"></a>
-### Requirements
+For silent mode run the cmd console as Administrator and type:
 
-  * Microsoft Windows XP or later
-
-<a name="installation"></a>
-### Installation
-
-  * This file don't require installation
+```
+resetSUSClientID /s
+```
 
 <a name="Donate"></a>
 ## :gift: Donate!
@@ -41,6 +37,26 @@ If you want to help me to continue this project, you might donate via PayPal.
 
 <a name="changelog"></a>
 ## :information_source: Changelog
+
+**1.0.1** (05/15/2019)
+
+  * <table border="0" cellpadding="4">
+		<tr>
+			<td>
+				<strong>Changes:</strong>
+			</td>
+			<td>
+				<ul>
+					<li>
+						Auto lauch with elevation
+					</li>
+					<li>
+						Silent mode
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
 
 **1.0.0** (04/10/2019)
 

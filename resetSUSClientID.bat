@@ -5,26 +5,43 @@
 
 echo off
 title Reset WSUS Client ID.
-color 17
-
 cls
+
+set args=%*
+
+openfiles>nul 2>&1
+
+if {%errorlevel%}=={0} (
+	if {%*}=={/s} (
+		goto SILENT_MODE
+	) else (
+		goto CONTINUE_SCRIPT
+	)
+)
+
 ver
 echo.Reset WSUS Client ID.
 echo.
+echo.    Reloading the Script with elevation,
+echo.    click on the "Allow" or "Yes" button to continue.
+echo.
+timeout /t 9 /nobreak
 
-echo.    The methods inside this tool modify files and registry settings.
-echo.    While you are tested and tend to work, We not take responsibility for
-echo.    the use of this tool.
-echo.
-echo.    This tool is provided without warranty. Any damage caused is your
-echo.    own responsibility.
-echo.
-echo.    As well, batch files are almost always flagged by anti-virus, feel free
-echo.    to review the code if you're unsure.
-echo.
+start wscript //nologo "%~dp0elevate.vbs"
 
-choice /c YN /n /m "Do you want to continue with this process? (Y/N) "
-if %errorlevel% EQU 2 goto :eof
+goto :EOF
+
+:SILENT_MODE
+
+start wscript //nologo "%~dp0hidden.vbs"
+
+goto :EOF
+
+:CONTINUE_SCRIPT
+
+ver
+echo.Reset WSUS Client ID.
+echo.
 
 echo.Canceling the Windows Update process.
 echo.
@@ -66,7 +83,7 @@ echo.
 
 rmdir /s /q "%SYSTEMROOT%\SoftwareDistribution.bak"
 ren "%SYSTEMROOT%\SoftwareDistribution" SoftwareDistribution.bak
-if exist "%SYSTEMROOT%\SoftwareDistribution" echo Failed to rename the SoftwareDistribution folder.  & pause & goto :eof
+if exist "%SYSTEMROOT%\SoftwareDistribution" echo Failed to rename the SoftwareDistribution folder. & pause & goto :eof
 
 rmdir /s /q "%SYSTEMROOT%\system32\Catroot2.bak"
 ren "%SYSTEMROOT%\system32\Catroot2" Catroot2.bak
