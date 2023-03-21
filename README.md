@@ -1,7 +1,7 @@
 ## Reset WSUS Client ID
 
-[![GitHub Release](https://img.shields.io/github/v/release/wureset-tools/Reset-WSUS-Client-ID)](https://github.com/wureset-tools/Reset-WSUS-Client-ID/releases/tag/v1.0.1)
-[![GitHub Release Date](https://img.shields.io/github/release-date/wureset-tools/Reset-WSUS-Client-ID)](https://github.com/wureset-tools/Reset-WSUS-Client-ID/releases/tag/v1.0.1)
+[![GitHub Release](https://img.shields.io/github/v/release/wureset-tools/Reset-WSUS-Client-ID)](https://github.com/wureset-tools/Reset-WSUS-Client-ID/releases/tag/v1.0.2)
+[![GitHub Release Date](https://img.shields.io/github/release-date/wureset-tools/Reset-WSUS-Client-ID)](https://github.com/wureset-tools/Reset-WSUS-Client-ID/releases/tag/v1.0.2)
 [![GitHub license](https://img.shields.io/github/license/wureset-tools/Reset-WSUS-Client-ID)](./LICENSE)
 
 ## Description:
